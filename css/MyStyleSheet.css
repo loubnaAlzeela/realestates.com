@@ -1,0 +1,641 @@
+/*---------Home page------*/
+body {
+    overflow-x: hidden;/*--The content is clipped - and no scrolling mechanism is provided, if it overflows the element's content area--*/
+    color: #505962;
+   
+}
+
+/*=====Start Navigation ======*/
+.navbar {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 20px;
+    
+    letter-spacing: .1rem;
+    background-color: transparent;
+    transition: background-color 1s ease 0s;
+ }
+nav a {
+	 margin: 2px 10px;
+}
+.navbar.solid {
+    background-color: rgba(0,0,0,0.6)!important;
+    transition: background-color 1s ease 0s;
+    
+}
+
+.navbar-brand h5 {
+    color:white;
+  
+}
+.navbar-brand img {
+    height: 3rem;
+    float:left;
+}
+
+.navbar-nav li {
+   margin-right:0;
+   padding-right:0;
+   float: left;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+   
+    
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #ec7d52;
+    border-bottom:solid;
+  
+    
+}
+
+.btn-primary {
+    background-color: #5576DA;
+    width: 9rem;
+    border-color:white;
+    border-radius: 9rem;
+	-webkit-border-radius: 9rem;
+	-moz-border-radius: 9rem;
+	-o-border-radius: 9rem;
+    
+}
+
+.btn-outline-light {
+    width: 9rem;
+    border-radius: 9rem;
+	-webkit-border-radius: 9rem;
+	-moz-border-radius: 9rem;
+	-o-border-radius: 9rem;
+    font-weight: bold;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='dodgerblue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: white;
+}
+
+.Blod {
+    font-weight: bold;
+}
+.vl {
+  border-left: 2px solid GRAY;
+  height: 20px;
+MARGIN-TOP:15PX;
+}
+/*=====End Navigation =====*/
+
+
+/*====Start Landgin page==*/
+
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    background: rgba(0, 0, 0, .60) url('../img/homeland.jpg');
+    background-blend-mode: darken;
+    position: fixed;
+    display: table;
+    top: 0;    
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+
+
+.caption {
+    width: 100%;
+    max-width: 80%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+    position:center;
+    left:10%;
+}
+
+.caption h1 {
+     font-size: calc(100% + 3vw + 3vh);
+    font-weight: 500;
+    letter-spacing: .1rem;
+    
+    padding-bottom: 1rem;
+   
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 3rem;
+	-webkit-border-radius: 3rem;
+	-moz-border-radius: 3rem;
+	-o-border-radius: 3rem;
+	
+    border-color: white;
+    padding: .6rem 1.3rem;
+    background-color: #5576DA;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 17rem;
+    color: white;
+}
+
+
+
+/*====End Landgin page==*/
+
+
+/*====Start Content Section ===*/
+
+.img-size {
+    width: 450px;
+    height: 300px;
+}
+
+.co-p {
+    font-size: 25px;
+    justify-content:flex-start;
+	text-align:justify;
+}
+.modal-header{
+    
+    font-weight:600;
+    font-size:3vw;
+    justify-content:center;
+    
+    
+}
+.sec-end {
+    margin: 3rem;
+    padding: 3rem;
+    padding-left: 9rem;
+}
+
+.sec-btn {
+    margin-left: 15rem;
+    margin-top: 2rem;
+}
+
+.btn-secondary {
+    border-width: medium;
+    border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius:0;
+	-o-border-radius: 0;
+    padding: .6rem 1.2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    border-color: #1EBBA3;
+    background-color: #1EBBA3;
+    color: white;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    border-color: #189582;
+    background-color: #189582;
+    color: white;
+}
+
+/*====End Content Section ===*/
+
+
+/*====start About Section ===*/
+#about {
+    background-color: #333437;
+    padding: 3rem;
+    padding-left: 9rem;
+    margin-top: 3rem;
+    justify-content: center;
+    width:100%;
+}
+
+.ab-p, h3 {
+    color: white;
+}
+
+.wrapper {
+  display: flex;
+}
+.wrapper i {
+  padding: 4px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 150ms;
+}
+.wrapper i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+.wrapper a:nth-child(1) {
+  color: #dd4b39;
+}
+.wrapper a:nth-child(2) {
+  color: #4867AA;
+}
+.wrapper a:nth-child(3) {
+  color: #1DA1F2;
+}
+
+/*====End About Section ===*/
+
+
+/*---------Start login div------*/
+.inp {
+    width: 300px;
+}
+
+.avatar img {
+    width: 120px;
+    height: 120px;
+}
+.modal-footer{
+    justify-content:center;
+}
+/*---------End login div------*/
+
+
+/*---------Start signup page------*/
+
+.signUp-body {
+    background-image: url('img/bg_login.png');
+   /* position: fixed;
+    display: table;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#form1{
+    align-content: center;
+}
+.form-control {
+    font-size: 16px;
+    transition: all 0.4s;
+    box-shadow: none;
+}
+
+    .form-control:focus {
+        border-color: #5cb85c;
+    }
+
+.form-control, .btn {
+    border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius:50px;
+	-o-border-radius:50px;
+    outline: none !important;
+}
+
+.signup-form {
+    margin: 0 auto;
+    padding:30px ;
+    
+}
+
+.signup-form form {
+    border-radius: 5px;
+	-webkit-border-radius:  5px;
+	-moz-border-radius: 5px;
+	-o-border-radius:  5px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    
+}
+
+.signup-form a {
+    color: #189582;
+}
+
+.signup-form h2 {
+   text-align: center;
+    font-size: 5vw;
+    margin: 50px 10px 15px 10px;
+}
+
+.signup-form .hint-text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+   
+}
+
+.signup-form .btn {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signup-btn {
+    text-align: center;
+    border-color: #5cb85c;
+    transition: all 0.4s;
+    width: 60%;
+}
+
+.signup-btn:hover {
+    background: #5cb85c;
+    opacity: 0.8;
+}
+
+.or-seperator {
+    margin: 50px 0 15px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.or-seperator b {
+    padding: 0 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius:  50%;
+    position: relative;
+    top: -22px;
+    z-index: 1;
+}
+
+.social-btn a {
+    width: 130px;
+}
+
+.social-btn .btn {
+    color: #fff;
+    margin-bottom: 3px;
+    font-size: 15px;
+    border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius:  50px;
+    font-weight: normal;
+    border: none;
+    transition: all 0.4s;
+}
+
+    .social-btn .btn:first-child {
+        margin-left: 0;
+    }
+
+    .social-btn .btn:hover {
+        opacity: 0.8;
+    }
+
+.social-btn .btn-primary {
+    background: #507cc0;
+}
+
+.social-btn .btn-info {
+    background: #64ccf1;
+}
+
+.social-btn .btn-danger {
+    background: #df4930;
+}
+
+.social-btn .btn i {
+    float: left;
+    margin: 3px 10px;
+    font-size: 20px;
+}
+
+/*---------End signup page------*/
+
+/*---------Start userpage------*/
+
+.u_page{
+      margin-top:100px;
+}
+.u_card{ 
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);  
+   margin-left:13%;
+   
+}
+.u_img{
+    width:100px;
+    height:100px;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;  
+  border-top: 1px solid rgba(255, 0, 0, 0.1);
+}
+/* This hides all pages */
+.page {
+    display: none;
+}
+
+/* This displays the first page */
+.default {
+    display: block;
+}
+
+/* This displays the page corresponding to the one you clicked on */
+:target {
+    display: block;
+}
+
+/* This hides the default page when another page is clicked */
+:target ~ .default {
+    display: none;
+}
+
+.card{
+    border: none;
+}
+
+.active a{
+    color:white;  
+    }
+
+/*---------End userpage------*/
+
+/*---------start add ads------*/
+
+hr.style1{
+	border-top: 1px solid #8c8b8b;  
+}
+#stepwizard{
+    background-color:white;
+}
+.selectpicker{
+    width:80%;
+    border-radius:3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+    border-style:ridge;
+    
+}
+
+.add{
+   display: inline-block;
+   margin-right: 10px;
+   float:left;  
+}
+
+.add label{
+   display: block;
+}
+.tbox{
+    width:100%;
+}
+
+.lab {
+    font-weight:700;
+    font-size:large;
+    border-bottom:solid;
+}
+.test
+    {
+
+
+    }
+table.test td
+    {
+      
+       text-align: right;
+    }
+#map {
+    width: 800px;
+    height: 500px;
+}
+
+.btn_finish{
+    width:100px;
+    margin-top:20px;
+}
+/*---------end add ads------*/
+
+/*-- Start ads view page--*/
+ 
+     .slider {
+        width: 80%;        
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+     
+    }
+
+.slick-prev:before{
+
+    }
+.slick_img{
+    border-color:black;
+}
+.control-c {
+    width: 50px;
+    height: 50px;
+}
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+.slick_div{
+    border: 3px solid #F2F3F4 ;
+    
+    
+}
+/*-- End ads view page--*/
+
+/*-- startads content--*/
+.ads_div{
+    border: 3px solid #F2F3F4 ;
+    width:100%;
+    text-align:left;
+    margin-top:15px;
+   
+}
+/*--end ads content--*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+  h1 {font-size:1.5rem;} /*1rem = 16px*/
+   nav.navbar.collapse {
+    background: lightgray;
+  }
+
+  
+  
+
+
+
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .signup-form { width: 75%;}
+    .signup-form h2 {font-size: 5vw;}
+ 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .signup-form { width: 50%;}
+    .signup-form h2 {font-size: 4vw;}
+    
+
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+ 
+}
+ 
