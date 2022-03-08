@@ -34,6 +34,11 @@ let nCount=function(selector){
   })
 }
 
+VanillaTilt.init(document.querySelectorAll(".team"), {
+      max: 25,
+      speed: 400
+    });
+
 
 window.sr=ScrollReveal();
 	sr.reveal('.showabout-left',{
