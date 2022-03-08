@@ -34,6 +34,24 @@ let nCount=function(selector){
   })
 }
 
+
+window.sr=ScrollReveal();
+	sr.reveal('.showabout-left',{
+		duration: 2000,
+		origin:'left',
+		distance: '300px'
+	});
+	sr.reveal('.showabout-right',{
+		duration: 2000,
+		origin:'right',
+		distance: '300px'
+	});
+	sr.reveal('.showabout-btn',{
+		duration: 2000,
+		origin:'right',
+		distance: '300px'
+	});
+
 let a=0;
 $(window).scroll(function(){
   let oTop=$(".numbers").offset().top-window.innerHeight;
