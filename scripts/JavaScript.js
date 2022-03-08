@@ -34,6 +34,10 @@ let nCount=function(selector){
   })
 }
 
+include ('vanilla-tilt.js');
+include ('https://unpkg.com/scrollreveal/dist/scrollreveal.min.js');
+
+
 VanillaTilt.init(document.querySelectorAll(".team"), {
       max: 25,
       speed: 400
