@@ -36,7 +36,7 @@ let nCount=function(selector){
 
 
 
-include ('https://unpkg.com/scrollreveal/dist/scrollreveal.min.js');
+
 
 function includeJs(vanilla-tilt.js){
 VanillaTilt.init(document.querySelectorAll(".team"), {
