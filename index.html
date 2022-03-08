@@ -5,14 +5,14 @@
 
     <title>Home</title>
     <meta charset="utf-8"/>
-   
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>    
-   
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
     <link href="Packages/bootstrap.min.css" rel="stylesheet" />
-    <script src="Packages/jquery-3.3.1.min.js"></script> 
-    <script src="Packages/bootstrap.min.js"></script>    
+    <script src="Packages/jquery-3.3.1.min.js"></script>
+    <script src="Packages/bootstrap.min.js"></script>
     <script src="Packages/popper.min.js"></script>
-   
+
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -20,7 +20,7 @@
     <script src="scripts/JavaScript.js"></script>
 </head>
 <body  data-spy="scroll" data-target="#navBarRes">
-    <form id="form1" >
+
      <!-- Start Home Section -->
     <div id ="home">
       <!-- Start nav Section -->
@@ -35,51 +35,51 @@
 				<a class="nav-link " href="#home">Home</a>
 			</li>
 			<li class="nav-item ">
-				<a class="nav-link " href="#content">Services</a>		
+				<a class="nav-link " href="#content">Services</a>
 			</li>
-			<li class="nav-item ">		
+			<li class="nav-item ">
                 <a class="nav-link " href="Add_Ads.html">Add Ads</a>
 			</li>
-            <li class="nav-item">		
+            <li class="nav-item">
                 <a class="nav-link " href="#about">About us</a>
 			</li>
-            
+
             </ul>
              <ul class="navbar-nav  ml-auto">
-				<li class="nav-item ">		
-				<a class="nav-link " href="#">Login  </a>
+				<li class="nav-item ">
+				<a class="nav-link " href="" data-toggle="modal" data-target="#ModalCenter" >Login  </a>
 				</li>
 			<li><div class="vl"></div></li>
-				<li class="nav-item  ">		
-					<a class="nav-link " href="#">Sign up</a>
+				<li class="nav-item  ">
+					<a class="nav-link " href="Sign up.html">Sign up</a>
 				</li>
 			</ul>
-		
+
 	</div>
 </nav>
-<!-- End nav section -->                                                          
+<!-- End nav section -->
 
- 
+
 <!--  Start page section -->
 
 <div class="landing">
 	<div class="home-wrap">
 		<div class="home-inner">
-			
+
 		</div>
-	</div>	
-</div>   
+	</div>
+</div>
 <div class="caption text-center" >
-		 
-  <button type="button" class="btn btn-outline-light btn-lg" OnClick="Ads_view()">Start Now</button>
+
+  <button type="button" class="btn btn-outline-light btn-lg" OnClick="Ads_view()">Browser Now</button>
   </div>
-   
+
  <!-- Modal -->
 <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog"  aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title offset-5 " id="exampleModalCenterTitle">Login</h5>          
+        <h5 class="modal-title offset-5 " id="exampleModalCenterTitle">Login</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -94,8 +94,8 @@
               <input type="email" class="form-control p-2 inp" id="email" placeholder="Email"  />
           </div>
           <div class="form-group">
-        <input type="password" class="form-control p-2 inp" id="pwd" placeholder="Enter password" name="pswd" />   
-          </div>            
+        <input type="password" class="form-control p-2 inp" id="pwd" placeholder="Enter password" name="pswd" />
+          </div>
           <span class="text-right"><a href="#">Forget password? </a></span>
         </div>
       <div class="modal-footer ">
@@ -106,56 +106,182 @@
   </div>
 </div>
  <!-- end modal-->
-   
-</div> <!-- End Home Section -->
-        
 
- 
+</div> <!-- End Home Section -->
+
+
+
     <!-- Start content Section -->
 <div id ="content" class="offset mt-5">
 
       <div class="container">
-	
+
 		<div class="row">
 				<div class="col-md-6 col-sm-6 p-2">
 					<div class="showabout-left ">
-                        <img class="img-fluid max-width:auto height:auto" src="img/img1.jpg" alt="house"/>
+            <img class="img-fluid max-width:auto height:auto" src="img/img1.jpg" alt="house"/>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-6 p-2 justify-content-center align-self-center">
 					<div class="showabout-right">
-						<p class="modal-header text-justif"> Display all details about </p>
-            <p class="co-p ">You can show all details by My Home for mediation realtor like price, number of rooms and floors.</p>
+						<p class="modal-header text-justif custom-text"> Display all details about </p>
+            <p class="co-p ">You can show all details by My Home for mediation real estates like price, number of rooms and floors.</p>
 					</div>
-					
+
 				</div>
 			</div>
-        
+
         <div class="row mt-5" >
             <div class="col-md-6 col-sm-6 p-2 justify-content-center align-self-center">
 					<div class="showabout-right">
-						<p class="modal-header">Maps</p>
-            <p class="co-p">You can show map of realtor with editable postions and show place of realtor for more clarity.</p>
+						<p class="modal-header custom-text">Maps</p>
+            <p class="co-p">You can show map of real estates with editable postions and show place of real estates for more clarity.</p>
 					</div>
-					
+
 				</div>
 				<div class="col-md-6 col-sm-6 p-2">
 					<div class="showabout-left ">
-                        <img class="img-fluid max-width:auto height:auto" src="img/img2.jpg" alt="map"/>
+              <img class="img-fluid max-width:auto height:auto" src="img/img2.jpg" alt="map"/>
 					</div>
 				</div>
 				</div>
 	</div>
-		
- 
-   
-
-	
 </div>
+<div class="container">
+
+
+
+  <section class="houses-section text-center">
+      <h1>Choose a house</h1>
+      <div class="row">
+      <div class="col-md-4 col-12 text-center">
+        <div class="card-1">
+            <p class="price">$1200</p>
+          <div class="house-text">
+            <h4>family house</h4>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <a href="#" class=" platatin-ntb">Book now</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-2">
+            <p class="price">$1200</p>
+          <div class="house-text">
+            <h4>family house</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <a href="#" class=" platatin-ntb">Book now</a>
+        </div></div>
+      <div class="col-md-4">
+        <div class="card-3">
+            <p class="price">$1200</p>
+          <div class="house-text">
+            <h4>family house</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <a href="#" class=" platatin-ntb">Book now</a>
+      </div></div>
+
+
+</div>
+</section>
+</div>
+<section class="statis-section">
+  <div class="cover">
+<img src="img/statis.jpg" alt="">
+  </div>
+    <div class="container text-center">
+      <div class="numbers d-flex flex-md-row flex-wrap justif-content-center">
+        <div class="rect">
+          <h1>2461</h1>
+          <p>Happy Client</p>
+        </div>
+        <div class="rect">
+          <h1>6493</h1>
+          <p>Houses</p>
+        </div>
+        <div class="rect">
+          <h1>1500</h1>
+          <p>Staffs</p>
+        </div>
+        <div class="rect">
+          <h1>500</h1>
+          <p>Destination</p>
+        </div>
+      </div>
+
+
+    </div>
+</section>
+<section class="team-section text-center">
+  <h1>Our Team</h1>
+<div class="teams">
+  <div class="team">
+    <div class="team-content">
+      <div class="imgBox"><img src="img\emp1.jpg" alt=""></div>
+      <div class="contentBx">
+        <h3>Someone name <br> <span>Creative Designer</span> </h3>
+      </div>
+    </div>
+    <ul class="sci">
+      <li style="--i:1">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      </li>
+      <li style="--i:2">
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </li>
+      <li style="--i:3">
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="team">
+    <div class="team-content">
+      <div class="imgBox"><img src="img\emp2.jpg" alt=""></div>
+      <div class="contentBx">
+        <h3>Someone name <br> <span>Creative Designer</span> </h3>
+      </div>
+    </div>
+    <ul class="sci">
+      <li style="--i:1">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      </li>
+      <li style="--i:2">
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </li>
+      <li style="--i:3">
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="team">
+    <div class="team-content">
+      <div class="imgBox"><img src="img\emp3.jpg" alt=""></div>
+      <div class="contentBx">
+        <h3>Someone name <br> <span>Creative Designer</span> </h3>
+      </div>
+    </div>
+    <ul class="sci">
+      <li style="--i:1">
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      </li>
+      <li style="--i:2">
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </li>
+      <li style="--i:3">
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+</section>
 <!-- End content  Section -->
 <!-- Start About  Section -->
 <div id ="about" class="offset">
-    
+
 	<div class="row">
 				<div class="col-md-4 col-sm-12">
 					<div >
@@ -176,7 +302,7 @@
                  Privacy policy<br/>
                    Terms of using<br/></p>
 					</div>
-                    
+
 			</div>
         <div class="col-md-4 col-sm-12">
 					<div >
@@ -188,21 +314,31 @@
                  <a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
                  <a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter-square"></i></a>
               </div>
-
           </div>
 				</div>
       </div>
-  
+
 </div>
+<script type="text/javascript">
+
+
+</script>
 
 
 
 
 
+<script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
+<script type="text/javascript">
 
 
-<!--for move items in about ection --> 
+</script>
+<!--for move items in about ection -->
     <script>
+    VanillaTilt.init(document.querySelectorAll(".team"), {
+      max: 25,
+      speed: 400
+    });
 	window.sr=ScrollReveal();
 	sr.reveal('.showabout-left',{
 		duration: 2000,
@@ -219,11 +355,15 @@
 		origin:'right',
 		distance: '300px'
 	});
-	
-	</script>  
-    
 
-    </form>
+
+
+
+
+	</script>
+
+
+
 
 
 </body>
