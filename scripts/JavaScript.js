@@ -34,15 +34,16 @@ let nCount=function(selector){
   })
 }
 
-include ('vanilla-tilt.js');
+
+
 include ('https://unpkg.com/scrollreveal/dist/scrollreveal.min.js');
 
-
+function includeJs(vanilla-tilt.js){
 VanillaTilt.init(document.querySelectorAll(".team"), {
       max: 25,
       speed: 400
     });
-
+}
 
 window.sr=ScrollReveal();
 	sr.reveal('.showabout-left',{
