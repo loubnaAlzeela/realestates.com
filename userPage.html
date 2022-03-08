@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html >
+<head >
+    <title>User Page</title>
+    <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="Packages/bootstrap.min.css" rel="stylesheet" />
+  <script src="Packages/jquery-3.3.1.min.js"></script>  
+  <script src="Packages/bootstrap.min.js"></script>     
+  <script src="Packages/popper.min.js"></script>
+
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="css/MyStyleSheet.css" rel="stylesheet" />
+    <script src="scripts/JavaScript.js"></script>
+</head>
+<body id="user_page" data-spy="scroll" data-target="#navBarRes">
+    <form id="form1" >
+     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+     <a class="navbar-brand navbar-brand-color" href="index.html"><img src="img/logo.png" /><h5>My Home</h5></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarRes">
+	    <span class="navbar-toggler-icon"></span>
+	    </button>
+        <div class="collapse navbar-collapse " id="navBarRes">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item d-block  d-sm-block d-lg-none">	<a href="#u_info">My Account</a></li>
+            <li class="nav-item d-block  d-sm-block d-lg-none">	<a href="#u_ads" >My Ads</a></li>
+            <li class="nav-item d-block  d-sm-block d-lg-none">	<a href="#u_chgpass">Change assword</a></li>
+            <li class="nav-item d-block  d-sm-block d-lg-none">	<a href="index.html" >Log out</a></li>
+                
+            <li class="nav-item d-none  d-lg-block mr-5">
+				<a href="Add_Ads.html"><button class="btn btn-primary" OnClick="btn_addAds" type="button" >Add Ads</button></a>
+			</li>
+            <li class="nav-item d-none  d-lg-block mr-5">
+                <img src="img/icon-user.png" />
+               <a  ID="u_name">Username</a>
+            </li>
+        </ul>
+        </div>
+         </nav>
+        <br />
+<div class="row u_page"  style="align-content: center;">
+             <div class="col-md-12 col-lg-3" >
+                <div class="card  u_card d-none d-lg-block" style="width: 18rem;" >
+                     <div class="card-header"> 
+                     <img class="u_img" src="img/user_icon.png" />
+                     <asp:Label runat="server" ID="u_name1">User name</asp:Label><br/>
+                     <asp:Label runat="server" ID="u_Email">User Email</asp:Label>
+                    </div>               
+                     <hr/>
+                  
+                        <ul class="list-group list-group-flush" style="text-align: center ;" >
+                        <li class="list-group-item active" ><a href="#u_info">My Account</a></li>
+                        <li class="list-group-item"><a href="#u_ads" >My Ads</a></li>
+                        <li class="list-group-item"><a href="#u_chgpass">Change password</a></li>
+                         <li class="list-group-item"><a href="index.html" >Log out</a></li>
+                      </ul>                     
+                     </div>
+                    </div>
+              
+             
+   <div class="col-md-12 col-lg-9 " >
+ 
+ <!--div for display user Advertisements --->
+        <div id="u_ads" class="page" >
+            <div class="container" >
+            <button class="btn btn-primary  " type="button" data-toggle="modal" data-target="#ModalCenter" >Suspended</button>
+            <button class="btn btn-primary " type="button" data-toggle="modal" data-target="#ModalCenter" >Accepted</button>
+            <button class="btn btn-danger     " type="button" data-toggle="modal" data-target="#ModalCenter" >Deleted</button>
+            </div>
+        </div>
+ <!--div for change user password --->
+        <div id="u_chgpass" class="page "  >
+            <div class="container">
+                <div class="row">
+                 <div class="col-md-8">
+                <div class="card">
+                            <div class="card-header" style="text-align:center;"><h2>Change password<h2></div>
+                            <div class="card-body">
+                <div class="form-group" >
+                    <label for="name" class="cols-sm-2 control-label">Old password</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group" >
+                            <span class="input-group-addon p-1"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" name="name" id="pass"/>
+                        </div>
+                    </div>
+                </div>
+                        <div class="form-group">
+                            <label for="password" class="cols-sm-2 control-label">New Password</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon p-1"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="password" id="password"  />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm" class="cols-sm-2 control-label">Confirm password </label>
+                            <div class="cols-sm-10">
+                                <div class="input-group" >
+                                    <span class="input-group-addon p-1"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="confirm" id="confirm"  />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                                <button type='submit' class="btn btn-primary btn-lg btn-block login-button" >Save</button>
+                        </div>                   
+                   </div>
+            </div>
+        </div>
+   </div>
+
+  </div>
+</div>
+ <!--div for display user information --->
+             <div id="u_info" class="page default"  >            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header" style="text-align:center;"><h2>My Account </h2></div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                <label for="name" class="cols-sm-2 control-label" >Name</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group" >
+                                        <span class="input-group-addon p-1"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your Name" style="direction: rtl;"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="cols-sm-2 control-label">Email</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group" >
+                                        <span class="input-group-addon p-1"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" name="email" id="email" placeholder="Enter your Email" style="direction: rtl;"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="username" class="cols-sm-2 control-label">Phone number</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group" >
+                                        <span class="input-group-addon p-1"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username" style="direction: rtl;"/>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group ">
+                                <button type="button" class="btn btn-primary btn-lg btn-block login-button">Save</button>
+                            </div>                           
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+   </div>
+       
+ </div>
+
+       
+     
+
+
+
+
+
+    </form>
+   <script>
+        $("li").click(
+    function(event) {
+      $('li').removeClass('active');
+      $(this).addClass('active');
+    //  event.preventDefault()
+    }
+        );
+    </script>
+</body>
+</html>

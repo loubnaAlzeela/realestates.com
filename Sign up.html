@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link href="Packages/bootstrap.min.css" rel="stylesheet" />
+    <script src="Packages/jquery-3.3.1.min.js"></script>  
+    <script src="Packages/bootstrap.min.js"></script>     
+    <script src="Packages/popper.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+    <link href="css/MyStyleSheet.css" rel="stylesheet" />
+    <script src="scripts/JavaScript.js"></script>
+</head>
+<body class="signUp-body">
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand navbar-brand-color" href="index.html"><img src="img/logo.png" /><h5>My Home</h5></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarRes">
+         <span class="navbar-toggler-icon"></span>
+         </button>               
+         <div class="collapse navbar-collapse " >
+         <ul class="navbar-nav ml-auto">
+                <li class="nav-item d-none  d-lg-block">
+             </li>
+             <li class="nav-item">
+                   <img src="img/icon-user.png" />
+                   <a href="userPage.html" ID="u_name">Username</a>
+               </li>
+           </ul>
+           </div>
+            </nav>
+    <form id="form1" >
+    <div class="container"  >
+        <div class="signup-form"> 
+            <div class="row">
+            <div class="col-sm-12">
+                              
+                 <h2 class="text">Create New Account</h2>
+               
+            </div></div>
+
+            <div class="row">
+                <div class="col-md-12 "> 
+                    <div class="social-btn text-center">            
+                    <a href="#" class="btn btn-primary "><i class="fa fa-facebook"></i>Facebook</a>
+                    <a href="#" class="btn btn-info "><i class="fa fa-twitter"></i>Twitter</a>
+                    <a href="#" class="btn btn-danger "><i class="fa fa-google"></i>Google</a>
+                    </div>
+            </div></div>
+
+            <div class="row">  
+                <div class="col-sm-12">
+            <div class="or-seperator"><b>or</b></div>
+           </div></div>
+
+            <div class="row">  
+                <div class="col-sm-12 ">
+               
+                     <div class="form-group">
+                      <input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required" />
+                     </div>
+            </div></div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="form-group mr-sm-2">
+                    <input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required" />
+                </div>
+            </div></div>
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="form-group">
+                    <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required" />
+                </div>
+            </div></div>
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="form-group">
+                    <input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm Password" required="required" />
+                </div>
+            </div></div>
+            <div class="row">
+                <div class="col-sm-12">
+                <div class="form-group text-center ">
+                    <button type='submit' class="btn btn-success  signup-btn">Sign Up</button>
+                </div>
+            </div></div>
+            
+            
+            
+                <div class="text-center text"><p >Already have an account? <a href="#" >Login here</a></p></div>
+      
+
+
+        </div></div>       
+    </form>
+
+</body>
+</html>
