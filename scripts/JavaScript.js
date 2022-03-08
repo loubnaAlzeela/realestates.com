@@ -35,18 +35,6 @@ let nCount=function(selector){
 }
 
 
-
-
-
-function includeJs(vanilla-tilt.js){
-VanillaTilt.init(document.querySelectorAll(".team"), {
-      max: 25,
-      speed: 400
-    });
-}
-
-
-
 let a=0;
 $(window).scroll(function(){
   let oTop=$(".numbers").offset().top-window.innerHeight;
