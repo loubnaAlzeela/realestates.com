@@ -1,5 +1,5 @@
 ﻿/*---------Home page------*/
-header{
+*{
 margin:0;
 padding:0;
 }
@@ -850,6 +850,8 @@ table.test td
 /*--end ads content--*/
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 200px) {
+	
+	body{overflow-x: hidden;}
     h1 {font-size:1.5rem;}
   .rect{
     width: 6rem;
