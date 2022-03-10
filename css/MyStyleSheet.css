@@ -1,4 +1,8 @@
 ﻿/*---------Home page------*/
+*{
+margin:0;
+padding:0;
+}
 body {
     overflow-x: hidden;/*--The content is clipped - and no scrolling mechanism is provided, if it overflows the element's content area--*/
     color: #505962;
