@@ -965,6 +965,9 @@ margin-bottom: 50px;
 .custom-text{
   font-size: 25px;
 }
+	#navBarRes{
+      background-color: rgba(0,0,0,0.8);
+    }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -1049,6 +1052,9 @@ margin-bottom: 50px;
     }
     .custom-text{
       font-size: 25px;
+    }
+    #navBarRes{
+      background: transparent;
     }
 
 }
